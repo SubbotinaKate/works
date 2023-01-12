@@ -1,0 +1,175 @@
+@font-face {
+	font-family: 'GolosTextVF';
+	src: 
+		url('design/GolosTextVF-Regular.woff2') format('woff2');
+
+}
+
+*{
+    margin: 0;
+    font-family: 'GolosTextVF';
+}
+
+header {
+    background-color: rgba(98, 76, 144, 1);
+    height: 80px;
+    display: grid;
+    justify-content: last baseline;
+}
+
+.HEADER{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+
+.header-container{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.header-item{
+    margin-left: 28px;
+    color: white;
+    font-weight: 500;
+}
+
+.header-item a{
+      color: white;
+}
+
+.header_but{
+     height: 42px;
+    width: 141px;
+    background-color: white;
+    border:none;
+    border-radius: 7px;
+}
+
+.header_but p{
+    color:rgba(85, 59, 139, 1);
+    size: 15px;
+}
+
+main {
+    background-color: rgba(243, 243, 243, 1);
+    padding: 60px;
+}
+
+p{
+    font-size: 18px;
+}
+
+h1{
+    margin-bottom: 40px;
+    font-weight: 800;
+    font-size: 36px;
+}
+
+form {
+    background-color: white;
+    border-radius: 5px;
+    padding: 40px;
+}
+
+.input_field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+.input_field p{
+    color:rgba(17, 34, 68, 0.5);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.input_field label{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    border: 3px solid rgba(98, 76, 144, 1);
+    border-radius: 5px;
+    width: 30%;
+    min-width: 150px;
+    font-size: 18px; 
+    padding: 20px 40px;
+}
+
+input:invalid:required, textarea:invalid:required, select {
+    padding: 24px;
+    color: rgba(17, 34, 68, 1);
+    border: 2px solid rgba(19, 39, 78, 0.5);
+    border-radius: 5px;
+}
+
+input:valid, textarea:valid {
+    border: 2px solid rgb(133, 216, 24);
+    padding: 24px;
+    color: rgba(17, 34, 68, 1);
+    border-radius: 7px;
+}
+
+input:invalid, textarea:invalid {
+    border: 2px solid rgb(255, 0, 128);
+    padding: 24px;
+    color: rgba(17, 34, 68, 1);
+    border-radius: 7px;
+}
+
+
+.new_post {
+    background-color:rgba(98, 76, 144, 1);
+    border-radius: 7px;
+    width: 15%;
+    min-width: 130px;
+    height: 60px;
+    border:none;
+}
+
+.new_post p{
+    color:white;
+    font-size: 18px;
+}
+
+footer{
+    margin: 60px 0;
+}
+.footer{
+    display: flex;
+    justify-content:space-between;
+    font-weight: 500;
+    align-items:center
+} 
+.a_one{
+    color: #366AF3;
+}
+.a_two{
+margin-left: 40px;
+color: #366AF3;
+}
+
+.text{
+    color: #999999;
+    font-weight: 500;
+}
+
+button{
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+/*закрываем файлик*/
+input[type="file"] {
+    display:none;
+}
