@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/lab_4.css">
+    <link rel="stylesheet" href="style/lab_6.css">
+    <title>Lab_6</title>
+</head>
+
+<body>
+    <div class="header-wrapper">
+        <header class="HEADER">
+            <div class="Head-logo">
+                    <img src="design/logo.svg">
+            </div>
+            <div class="Head-item">
+                <div class="img-user">
+                    <img src="/design/i-user.svg" alt="">
+                </div>
+                <nav>
+                    <a id="enter">Войти</a>
+                    <a>Зарегистрироваться</a>
+                </nav>
+            </div>
+        </header>
+        
+        
+    </div>
+    <div class="Log_in">
+            <form class="Form" method="POST">
+                <div class="text_header">
+                    <p class="text_log_in"><b>Вход</b></p>
+                    <img src="design/krest.png" class="closed">
+                </div>
+    
+                <div class="log_pass">
+                    <label class="login">Логин</label>
+                    <input class="input_text" type="text" required>
+                </div>
+    
+                <div class="log_pass">
+                    <label class="pass">Пароль</label>
+                    <input class="input_text" type="password" required>
+                </div>
+    
+                <div class="button_log_in">
+                    <button class="but_enter" value="button_enter" type="submit">
+                        <p><b>Войти</b></p>
+                    </button>
+                    <a class="question">Забыли пароль?</a>
+                </div>
+          </div>  
+    <main>
+        <a id="update_page">
+        </a>
+        <h1>Последние публикации</h1>
+        <div class="block">
+            <div class="block-items">
+                <div class="items">
+                    <div class="item" data-id="1" data-tags="git, console">
+                        <div class="item-image">
+                            <img src="content/post-1.png">
+                        </div>
+                        <div class="description">
+                            <b>Работа с Git в Visual Studio Code</b>
+                            <p>Один из способов работать с Гитом.</p>
+                        </div>
+                        <div class="tags">
+                            <p>Git</p>
+                            <p>Консоль</p>
+                        </div>
+                    </div>
+                    <div class="item" data-id="2" data-tags="figma">
+                        <div class="item-image">
+                            <img src="content/post-2.png">
+                        </div>
+                        <div class="description">
+                            <b>Adobe покупают Фигму. Всё пропало?</b>
+                            <p>Не факт, но есть разные мнения.</p>
+                        </div>
+                        <div class="tags">
+                            <p>Figma</p>
+                        </div>
+                    </div>
+                    <div class="item" data-id="3" data-tags="education, career">
+                        <div class="item-image">
+                            <img src="content/post-3.png">
+                        </div>
+                        <div class="description">
+                            <b>Все научились программировать. А дальше что?</b>
+                            <p>Ученье - свет.</p>
+                        </div>
+                        <div class="tags">
+                            <p>Обучение</p>
+                            <p>Карьера</p>
+                        </div>
+                    </div>
+                    <div class="item" data-id="4" data-tags="education">
+                        <div class="item-image">
+                            <img src="content/post-4.png">
+                        </div>
+                        <div class="description">
+                            <b>Мне тяжело учиться, кто поможет?</b>
+                            <p>Попали в патовую ситуацию? Тогда кликайте на статью</p>
+                        </div>
+                        <div class="tags">
+                            <p>Обучение</p>
+                        </div>
+                    </div>
+                    <div class="item" data-id="5" data-tags="education, career">
+                        <div class="item-image">
+                            <img src="content/post-5.png">
+                        </div>
+                        <div class="description">
+                            <b>Ключевые навыки фронтендеров в 2022</b>
+                            <p>Ежегодное исследование рынка от HTML Academy</p>
+                        </div>
+                        <div class="tags">
+                            <p>Обучение</p>
+                            <p>Карьера</p>
+                        </div>
+                    </div>
+                    <div class="item" data-id="6" data-tags="news">
+                        <div class="item-image">
+                            <img src="content/post-6.png">
+                        </div>
+                        <div class="item_info">
+                        <div class="description">
+                            <b>Фронтенд-новости</b>
+                            <p>WAI-ARIA, новинки HTML-форм и 12 ошибок любого джаваскриптера.</p>
+                        </div>
+                        <div class="tags">
+                            <p>Новости</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <button class="load-button"><b>Загрузить еще 6</b></button>
+            </div>
+            <div class="extra-menu" id="extraMenu">
+                <b>Рубрики</b>
+                <a href="#update_page" class="extra_tag" data-tag="education">Обучение</a>
+                <a href="#update_page" class="extra_tag" data-tag="career">Карьера</a>
+                <a href="#update_page" class="extra_tag" data-tag="figma">Figma</a>
+                <a href="#update_page" class="extra_tag" data-tag="console">Консоль</a>
+                <a href="#update_page" class="extra_tag" data-tag="git">Git</a>
+                <a href="#update_page" class="extra_tag" data-tag="news">Новости</a>
+            </div>
+        </div>
+        <footer id="colophon" class="footer">
+            <div class="anchors">
+                <a href="https://github.com/SubbotinaKate/works"class="a_one">Об авторе</a>
+                <a href=""class="a_two">Технологии</a>
+            </div>
+            <div class="text">
+                <p>Blog, 2022</p>
+            </div>
+        </footer>
+    </main>
+    <script src="login.js"></script>
+</body>
+
+</html>
