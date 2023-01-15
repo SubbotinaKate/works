@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style/lab_7.css">
+    <link rel="stylesheet" href="style/lab_6.css">
+    <link rel="stylesheet" href="style/post-add_style.css">
+
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <div class="HEADER">
+                <img class="Logo" src="design/logo.svg" alt="LogoImg">
+                <ul class="header-container">
+                    <li class="header-item" id="user_profile_picture">
+                        <img src="design/i-user.svg">
+                    </li>
+                    <li class="header-item" id="user_name">
+                        <p>@UserAccountLogin</p>
+                    </li>
+                    <li class="header-item" id="new_post">
+                        <button class="header_but">Новая запись</button>
+                    </li>
+                    <li class="header-item" id="log_out">
+                        <a class="head_li" id="logout" htef="">Выйти</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="Log_in">
+            <form class="Form" method="POST">
+                <div class="text_header">
+                    <p class="text_log_in"><b>Вход</b></p>
+                    <img src="design/krest.png" class="closed">
+                </div>
+
+                <div class="log_pass">
+                    <label class="login">Логин</label>
+                    <input class="input_text" type="text" required>
+                </div>
+
+                <div class="log_pass">
+                    <label class="pass">Пароль</label>
+                    <input class="input_text" type="password" required>
+                </div>
+
+                <div class="button_log_in">
+                    <button class="but_enter" value="button_enter" type="submit">
+                        <p><b>Войти</b></p>
+                    </button>
+                    <a class="question">Забыли пароль?</a>
+                </div>
+        </div>
+
+        <main>
+            <a id="update_page">
+            </a>
+            <div class="block">
+                <div class="Avtors_profile">
+                    <h3 v-html="avtor_name"></h3>
+                <a href="#" v-html="avtor_login"></a>
+                <div class="subs_sign">
+                   <div class="subs"> <p>Подписчики: <p v-html="subscribers"></p></p></div>
+                   <div class="sign"> <p>Подписки: <p v-html="signed"></p></p></div>
+                </div>
+                <div class="notes"><p> Записей: <p v-html="post_count"></p></p></div>
+                <select id="Select_Avtor" v-model="Select_Avtor">
+                    <option value="elementary">Все посты</option>
+                </select>
+                </div>
+                <div class="block-items">
+                    <div class="items">
+                        <div v-for="pdata in Sortpdata" class="item">
+                            <img v-bind:src="pdata.image" alt="Изображение">
+
+                            <div class="item_descb">
+                                <h4>{{pdata.title}}</h4>
+                                <p class="item_p">{{pdata.intro}}</p>
+                            </div>
+
+                            <div class="line">
+                                <p v-for="label in pdata.labels" v-bind:data-categories="label" class="written">
+                                    {{label}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="load-button"><b>Загрузить еще 6</b></button>
+                </div>
+                
+
+            </div>
+            <footer id="colophon" class="footer">
+                <div class="anchors">
+                    <a href="https://github.com/SubbotinaKate/works" class="a_one">Об авторе</a>
+                    <a href="" class="a_two">Технологии</a>
+                </div>
+                <div class="text">
+                    <p>Blog, 2022</p>
+                </div>
+            </footer>
+        </main>
+        <script src="scripts7lab/vue.min.js"></script>
+        <script src="scripts7lab/vue_content_massiv.js"></script>
+        <script src="scripts7lab/vue_start_creators.js"></script>
+    </div>
+</body>
+
+</html>
