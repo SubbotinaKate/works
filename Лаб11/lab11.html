@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab11</title>
+
+    <script type="text/javascript">
+        var re = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/;
+        function testInfo(phoneInput){
+        var agreed = re.exec(phoneInput.value);
+        if (!agreed)
+          window.alert(RegExp.input + " Пожалуйста, введите номер телефона!");
+        else
+          window.alert("Номер телефона " + agreed[0]);}
+
+        </script>
+</head>
+
+<body>
+    <div> 
+        <h2>Введите телефон</h2>
+        <h3>Ожидается +7 ##########</h3>
+        <h3>Ожидается 8 ##########</h3>
+        <h3>Ожидается +7 (###) ###-##-##</h3>
+            <input id="phone_number"><button onclick="testInfo(document.getElementById('phone_number'));">Проверка!</button>
+    </div>
+    
+</body>
+
+</html>
