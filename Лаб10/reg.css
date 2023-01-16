@@ -1,0 +1,190 @@
+
+@font-face {
+	font-family: 'GolosTextVF';
+	src: 
+		url('design/GolosTextVF-Regular.woff2') format('woff2');
+
+}
+
+body{
+    background-color: #F3F3F3;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'GolosTextVF';
+}
+
+.HEADER{
+    background-color: #624C90;
+    display: flex;
+    padding: 16px;
+    font-size: 14px;
+    line-height: 1.5;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+}
+
+.Head-logo{
+    padding-left: 60px;
+    width: 180px;
+    height: 49px;
+}
+
+.Head-item{
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    flex:auto;
+    flex-direction: row;
+    justify-content: end; 
+}
+
+.Head-item nav{
+    display: flex;
+    align-self: auto;
+    
+}
+
+.Head-item a, img{
+    margin-right: 34px;
+}
+
+.Head-item a {
+    color:white;
+}
+
+.Head-item a:active{
+    color: aquamarine;
+}
+
+.Head-item a :hover{
+    color:gray;
+    transform: scale(1.05);
+    transition: 0.15s;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+main {
+    padding: 60px;
+    background-color: rgba(243, 243, 243, 1);
+}
+
+.label_field{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+}
+
+.Input_text{
+    background-color: white;
+    border-radius: 8px;
+    padding: 40px;
+}
+
+.Reg_input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:20px;
+}
+
+input[type="text"] {
+    font-size: 17px;
+    font-weight: 400;
+    padding: 24px;
+    border:2px solid rgba(17, 34, 68, 0.5);
+    border-radius: 5px;
+    color: rgba(17, 34, 68, 1);
+}
+input[type="password"] {
+    font-size: 17px;
+    font-weight: 400;
+    padding: 24px;
+    border:2px solid rgba(17, 34, 68, 0.5);
+    border-radius: 5px;
+    color: rgba(17, 34, 68, 1);
+}
+input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    margin-right: 8px;
+}
+
+.label_field h2{
+    color:rgba(17, 34, 68, 0.5)
+}
+.constraint {
+    margin-top: 12px;
+    margin-left: 37px;
+    display: flex;
+    flex-direction: row;
+}
+.constraint h3{
+    color: rgba(60, 162, 85, 0.9);
+}
+.constraint img{
+margin-right: 11px;
+}
+.CheckBox_text{
+    display: flex;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.CheckBox_text{
+    background-color: white;
+}
+.CheckBox_text p{
+    font-size: 18px;
+    color: rgba(17, 34, 68, 1);
+}
+.register_user p{
+    font-size: 15px;
+    color:white;
+}
+.register_user button{
+    padding: 20px 40px;
+    border: none;
+    border-radius: 7px;
+}
+.register_user button:enabled{
+    background-color:rgba(98, 76, 144, 1);
+}
+.register_user button:disabled{
+    background-color: rgba(204, 204, 204, 1);
+}
+
+footer{
+    margin: 60px 0;
+}
+.footer{
+    display: flex;
+    justify-content:space-between;
+    font-weight: 500;
+    align-items:center
+} 
+.a_one{
+    color: #366AF3;
+}
+.a_two{
+margin-left: 40px;
+color: #366AF3;
+}
+
+.text{
+    color: #999999;
+    font-weight: 500;
+}
+
+button{
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
