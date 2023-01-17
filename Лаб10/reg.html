@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab5</title>
+
+    <link rel="stylesheet" href="reg.css">
+</head>
+
+<body>
+    <div class="header-wrapper">
+        <header class="HEADER">
+            <div class="Head-logo">
+                <a href="">
+                    <img src="design/logo.svg">
+                </a>
+            </div>
+            <div class="Head-item">
+                <div class="img-user">
+                    <img src="/design/i-user.svg" alt="">
+                </div>
+                <nav>
+                    <a href="">Войти</a>
+                    <a href="">Зарегистрироваться</a>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <main>
+        <h1>Регистрация</h1>
+        <form>
+            <div class="Input_text">
+                <div class="label_field" id="1">
+                    <div class="Reg_input">
+                        <h2>Имя</h2>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="Reg_input">
+                        <h2>Фамилия</h2>
+                        <input type="text" id="surname">
+                    </div>
+                </div>
+                <div class="label_field" id="2">
+                    <div class="Reg_input">
+                        <h2>Логин *</h2>
+                        <input class="check_err" type="text" id="login">
+                        <div class="in_constraints" id="login_constraints">
+                            <div class="constraint">
+                                <img src="design/i-accept.svg">
+                                <h3>Только буквы, цифры и символы @.+-_</h3>
+                            </div>
+                            <div class="constraint">
+                                <img src="design/i-accept.svg">
+                                <h3>Не более 150 символов</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Reg_input">
+                        <h2>E-mail</h2>
+                        <input type="text" name="email" id="email">
+                    </div>
+                </div>
+                <div class="label_field" id="3">
+                    <div class="Reg_input">
+                        <h2>Пароль*</h2>
+                        <input class="check_err" type="password" id="password">
+                        <div class="in_constraints" id="pass_constraints">
+                            <div class="constraint">
+                                <img src="design/i-accept.svg">
+                                <h3>Минимум 8 символов</h3>
+                            </div>
+                            <div class="constraint">
+                                <img src="design/i-accept.svg">
+                                <h3>Не может состоять только из цифр</h3>
+                            </div>
+                            <div class="constraint">
+                                <img src="design/i-accept.svg">
+                                <h3>Не должен совпадать с логином</h3>
+                            </div>
+                            <div class="constraint">
+                                <img src="design/i-accept.svg">
+                                <h3>Не должен быть в базе популярных паролей</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Reg_input">
+                        <h2>Подтверждение пароля</h2>
+                        <input class="check_err" type="password" id="repeat_pass">
+                        <div class="in_constraints" id="repeat_pass_constraints">
+                            <div class="constraint">
+                                <img src="design/i-accept.svg">
+                                <h3>Пароли не совпадают</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="CheckBox_text">
+                    <input type="checkbox" name="checkbox_check" checked>
+                    <p><b>Даю свое согласие на обработку персональных данных</b></p>
+                </div>
+                <div class="register_user">
+                    <button>
+                        <p>Зарегистрировать</p>
+                    </button>
+                </div>
+            </div>
+        </form>
+        <footer id="colophon" class="footer">
+            <div class="anchors">
+                <a href="https://github.com/SubbotinaKate/works" class="a_one">Об авторе</a>
+                <a href="" class="a_two">Технологии</a>
+            </div>
+            <div class="text">
+                <p>Blog, 2022</p>
+            </div>
+        </footer>
+    </main>
+</body>
+<script src="script10lab.js"></script>
+
+</html>
